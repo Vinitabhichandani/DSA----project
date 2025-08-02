@@ -53,7 +53,7 @@ int n = board.length;
 
 int n = board.length; 
 
-        if(col == n){ // ahi apne chees board e col per depend kare che apne col wise kam karishu
+        if(col == n){ // chess board depend on the col
              saveboard(board, allboard);
              return;
         }
@@ -85,8 +85,8 @@ int n = board.length;
      public static List<List<String>> solveNQueens(int n){ // allboard
 
         List<List<String>> allboard = new ArrayList<>();
-        char[][] board = new char[n][n]; // apne chess board ne 2d Array banav ta te simple they che
-        helper(board, allboard, 0); // starting col e 0 thi
+        char[][] board = new char[n][n]; // make the chess bord to the 2D Array 
+        helper(board, allboard, 0); // starting col is the  to the 0 
 
         return allboard;
      }
